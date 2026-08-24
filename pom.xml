@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bestzyx</groupId>
     <artifactId>xxl-job-spring-boot-starter</artifactId>
-    <version>3.3.2.1</version>
+    <version>3.3.3</version>
     <name>xxl-job-spring-boot-starter</name>
     <description>Spring Boot Starter for xxl-job executor, provides auto-configuration for XxlJobSpringExecutor.</description>
     <url>https://github.com/zhangyongxianggithub/xxl-job-spring-boot-starter</url>
