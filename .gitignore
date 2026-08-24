@@ -52,3 +52,4 @@ replay_pid*
 /openspec/
 **/.workbuddy
 **/.venv
+**/.flattened-pom.xml
