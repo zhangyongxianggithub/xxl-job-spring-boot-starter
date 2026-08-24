@@ -1,6 +1,7 @@
 package com.xxl.job.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 /**
  * xxl-job configuration properties, prefix "xxl.job".
@@ -16,11 +17,13 @@ public class XxlJobProperties {
     /**
      * xxl-job admin config
      */
+    @NestedConfigurationProperty
     private final Admin admin = new Admin();
 
     /**
      * xxl-job executor config
      */
+    @NestedConfigurationProperty
     private final Executor executor = new Executor();
 
     public Admin getAdmin() {
@@ -40,12 +43,12 @@ public class XxlJobProperties {
          * xxl-job admin address list, such as "http://address" or "http://address01,http://address02".
          * If blank, the executor will start without registry to admin.
          */
-        private String addresses;
+        private String addresses="http://127.0.0.1:8080/xxl-job-admin";
 
         /**
          * xxl-job access token, must match the token configured in admin.
          */
-        private String accessToken;
+        private String accessToken="default_token";
 
         /**
          * xxl-job admin request timeout, by second. Valid range is [1, 10], default 3s.
