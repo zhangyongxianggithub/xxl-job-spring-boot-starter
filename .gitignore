@@ -1,3 +1,16 @@
+.class
+/.git/
+/logs/
+.classpath
+.deployables
+.git
+.log
+.project
+/.settings/
+.svn
+_svn
+/LOG_PATH_IS_UNDEFINED/
+/.factorypath
 # Compiled class file
 *.class
 
@@ -22,3 +35,20 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+**/*.idea
+**/*.iml
+**/target
+**/.classpath
+**/.project
+**/.settings
+**/.factorypath
+**/.mvn
+**/.DS_Store
+**/.env
+**/.gradle
+**/*.Identifier
+/.codebuddy
+/openspec/
+**/.workbuddy
+**/.venv
